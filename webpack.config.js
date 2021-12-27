@@ -43,6 +43,7 @@ module.exports = {
         new miniCssExtractPlugin({
             filename: 'style/[name].[hash:8].css',
             chunkFilename:'style/[name].[hash:8].css',
+            ignoreOrder: true
         }),
     ],
     // devtool: 'inline-source-map',
@@ -89,6 +90,13 @@ module.exports = {
                 options: {
                     minimize: true,
                 },
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'fonts/[name][ext][query]'
+                }
             },
         ],
     },

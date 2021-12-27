@@ -34,6 +34,7 @@
     "gulp-minify-css": "^1.2.4",
     "highlight.js": "^10.7.1",
     "html-loader": "^2.1.2",
+    "icon-font-loader": "^4.0.0",
     "imports-loader": "^2.0.0",
     "json5": "^2.2.0",
     "mini-css-extract-plugin": "^1.3.9",
@@ -46,6 +47,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
+    "gsap": "^3.9.1",
     "lodash": "^4.17.21"
   },
   "browserslist": {
